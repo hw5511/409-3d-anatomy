@@ -1430,7 +1430,7 @@ body {
     background-image: url('https://static-assets.artlogic.net/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/arario/images/view/41665bcf70f0494b6e24246adbb35b4ej/arariogallery-ryu-in-resurrection-calm-dawn-1993.jpg');
     background-size: 220%;
     background-position: -5% 25%;
-    filter: grayscale(100%) brightness(0.35);
+    filter: grayscale(100%) brightness(0.5);
     z-index: 1;
 }
 
