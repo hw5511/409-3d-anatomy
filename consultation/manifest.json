@@ -78,10 +78,18 @@
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
     {
+      "id": "target_students",
+      "file": "sections/05_target_students.html",
+      "title": "Target Students",
+      "order": 5,
+      "enabled": true,
+      "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
+    },
+    {
       "id": "curriculum_roadmap",
       "file": "sections/06_curriculum_roadmap.html",
       "title": "Curriculum Roadmap",
-      "order": 5,
+      "order": 6,
       "enabled": true,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
