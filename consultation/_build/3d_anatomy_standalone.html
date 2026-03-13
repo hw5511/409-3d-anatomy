@@ -1426,6 +1426,18 @@ body {
 .what-learn-section {
     position: relative;
     overflow: hidden;
+    padding-top: 0;
+}
+
+.what-learn-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, var(--primary), transparent);
+    z-index: 3;
 }
 
 .what-learn-bg {
@@ -1437,7 +1449,7 @@ body {
     background-image: url('https://static-assets.artlogic.net/w_2000,h_2000,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/arario/images/view/41665bcf70f0494b6e24246adbb35b4ej/arariogallery-ryu-in-resurrection-calm-dawn-1993.jpg');
     background-size: 220%;
     background-position: -5% 25%;
-    filter: grayscale(100%) brightness(0.7);
+    filter: grayscale(100%) brightness(0.6);
     z-index: 1;
 }
 
@@ -1481,9 +1493,22 @@ body {
 .what-learn-highlight {
     font-size: clamp(1.5rem, 2.5vw, 2.2rem);
     font-weight: 800;
-    color: var(--accent);
     margin-top: var(--space-md);
     line-height: 1.4;
+    background: linear-gradient(
+        135deg,
+        #e8e8e8 0%,
+        #ffffff 15%,
+        #b0b0b0 30%,
+        #ffffff 45%,
+        #d0d0d0 55%,
+        #ffffff 70%,
+        #a8a8a8 85%,
+        #e0e0e0 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* ============================================
