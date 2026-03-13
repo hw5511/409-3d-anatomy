@@ -5,7 +5,7 @@
     "title": "3D Anatomy Lecture",
     "author": "Woohee",
     "date": "2026-03-13",
-    "version": "1.0.0"
+    "version": "2.0.0"
   },
   "presentation": {
     "type": "curriculum",
@@ -22,42 +22,50 @@
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
     {
+      "id": "why_clay_anatomy",
+      "file": "sections/02_why_clay_anatomy.html",
+      "title": "Why Clay Anatomy",
+      "order": 2,
+      "enabled": true,
+      "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
+    },
+    {
       "id": "what_is_3d_anatomy",
       "file": "sections/02_what_is_3d_anatomy.html",
       "title": "3D Anatomy?",
-      "order": 2,
-      "enabled": true,
+      "order": 3,
+      "enabled": false,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
     {
       "id": "traditional_vs_3d",
       "file": "sections/03_traditional_vs_3d.html",
       "title": "Traditional vs 3D",
-      "order": 3,
-      "enabled": true,
+      "order": 4,
+      "enabled": false,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
     {
       "id": "industry_trends",
       "file": "sections/04_industry_trends.html",
       "title": "Industry Trends",
-      "order": 4,
-      "enabled": true,
+      "order": 5,
+      "enabled": false,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
     {
       "id": "who_needs",
       "file": "sections/05_who_needs.html",
       "title": "Who Needs This",
-      "order": 5,
-      "enabled": true,
+      "order": 6,
+      "enabled": false,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
     {
       "id": "curriculum_roadmap",
       "file": "sections/06_curriculum_roadmap.html",
       "title": "Curriculum Roadmap",
-      "order": 6,
+      "order": 7,
       "enabled": true,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
@@ -65,24 +73,24 @@
       "id": "basic_curriculum",
       "file": "sections/07_basic_curriculum.html",
       "title": "Basic Curriculum",
-      "order": 7,
-      "enabled": true,
+      "order": 8,
+      "enabled": false,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
     {
       "id": "advanced_curriculum",
       "file": "sections/08_advanced_curriculum.html",
       "title": "Advanced Curriculum",
-      "order": 8,
-      "enabled": true,
+      "order": 9,
+      "enabled": false,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
     {
       "id": "master_curriculum",
       "file": "sections/09_master_curriculum.html",
       "title": "Master Curriculum",
-      "order": 9,
-      "enabled": true,
+      "order": 10,
+      "enabled": false,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     }
   ],
