@@ -1421,6 +1421,23 @@ body {
 }
 
 /* ============================================
+   Before/After Placeholder
+   ============================================ */
+.before-after-grid {
+    flex: 1;
+    align-items: center;
+}
+
+.image-placeholder {
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--muted);
+    min-height: 320px;
+}
+
+/* ============================================
    Shadow Effects
    ============================================ */
 .image-wrap,
@@ -1772,6 +1789,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-lg);
     align-items: stretch;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .target-card {
@@ -1785,19 +1804,24 @@ body {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
-.target-card--accent {
+.target-card--dark {
     background:
         linear-gradient(135deg,
-            rgba(255,255,255,0.25) 0%,
-            rgba(255,255,255,0.03) 25%,
-            rgba(255,255,255,0.18) 50%,
-            rgba(255,255,255,0) 70%,
-            rgba(255,255,255,0.12) 90%,
-            rgba(255,255,255,0.06) 100%),
-        var(--accent);
-    color: var(--accent-fg);
-    border: 1px solid rgba(255,255,255,0.25);
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.2);
+            rgba(255,255,255,0.18) 0%,
+            rgba(255,255,255,0) 20%,
+            rgba(255,255,255,0.12) 45%,
+            rgba(255,255,255,0) 65%,
+            rgba(255,255,255,0.08) 85%,
+            rgba(255,255,255,0.03) 100%),
+        var(--primary);
+    color: var(--primary-fg);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.target-card--dark .target-list li::before {
+    background: #fff;
+    opacity: 0.4;
 }
 
 .target-header-row {
@@ -1850,9 +1874,9 @@ body {
     opacity: 0.4;
 }
 
-.target-card--accent .target-list li::before {
-    background: #fff;
-    opacity: 0.5;
+.target-card:not(.target-card--dark) {
+    background: var(--muted);
+    border: 1px solid var(--border);
 }
 
 @media (max-width: 768px) {
@@ -1878,7 +1902,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-xs);
+    position: relative;
 }
 
 .placement-box {
@@ -1912,6 +1936,8 @@ body {
 }
 
 .placement-recommend {
+    position: absolute;
+    bottom: -1.5rem;
     font-size: clamp(0.7rem, 0.85vw, 0.8rem);
     font-weight: 600;
     color: var(--accent);
@@ -2019,16 +2045,16 @@ body {
         </div>
 
         <div class="content-area">
-            <div class="image-row-2" style="flex: 1; align-items: center;">
+            <div class="image-row-2 before-after-grid">
                 <div class="image-card">
-                    <div class="image-wrap" style="aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; background: var(--muted); min-height: 320px;">
-                        <p style="color: var(--muted-fg); font-size: 0.9rem; opacity: 0.5;">BEFORE 이미지 영역</p>
+                    <div class="image-wrap image-placeholder">
+                        <p class="placeholder-text">BEFORE 이미지 영역</p>
                     </div>
                     <p class="image-caption"><strong>BEFORE</strong> - 해부학 학습 전</p>
                 </div>
                 <div class="image-card">
-                    <div class="image-wrap" style="aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; background: var(--muted); min-height: 320px;">
-                        <p style="color: var(--muted-fg); font-size: 0.9rem; opacity: 0.5;">AFTER 이미지 영역</p>
+                    <div class="image-wrap image-placeholder">
+                        <p class="placeholder-text">AFTER 이미지 영역</p>
                     </div>
                     <p class="image-caption"><strong>AFTER</strong> - 해부학 학습 후</p>
                 </div>
@@ -2149,7 +2175,7 @@ body {
 
         <div class="content-area">
             <div class="target-grid">
-                <div class="target-card target-card--accent">
+                <div class="target-card target-card--dark">
                     <h3 class="target-title">CG 모델링 수강생</h3>
                     <ul class="target-list">
                         <li>ZBrush, Maya 등 3D 모델링 학습 중인 학생</li>
