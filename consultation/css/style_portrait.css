@@ -1924,6 +1924,18 @@ body {
     white-space: nowrap;
 }
 
+.target-badge-required {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--primary-fg);
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+
 .target-list {
     list-style: none;
     display: flex;
