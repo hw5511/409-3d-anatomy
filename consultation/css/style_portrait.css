@@ -684,16 +684,8 @@ body {
 .roadmap-list li {
     font-size: clamp(0.78rem, 0.9vw, 0.9rem);
     opacity: 0.8;
-    padding-left: 1rem;
-    position: relative;
 }
 
-.roadmap-list li::before {
-    content: "-";
-    position: absolute;
-    left: 0;
-    opacity: 0.5;
-}
 
 .roadmap-arrow {
     display: flex;
