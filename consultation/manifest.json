@@ -94,6 +94,14 @@
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     },
     {
+      "id": "what_you_learn",
+      "file": "sections/05b_what_you_learn.html",
+      "title": "What You Learn",
+      "order": 6,
+      "enabled": true,
+      "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
+    },
+    {
       "id": "curriculum_roadmap",
       "file": "sections/06_curriculum_roadmap.html",
       "title": "Curriculum Roadmap",
