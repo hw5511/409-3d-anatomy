@@ -76,6 +76,14 @@
       "order": 8,
       "enabled": true,
       "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
+    },
+    {
+      "id": "master_curriculum",
+      "file": "sections/09_master_curriculum.html",
+      "title": "Master Curriculum",
+      "order": 9,
+      "enabled": true,
+      "metadata": { "created": "2026-03-13T00:00:00", "modified": "2026-03-13T00:00:00" }
     }
   ],
   "build_config": {
