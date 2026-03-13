@@ -98,8 +98,8 @@ body {
 
 .hero-section--bg {
     background-image: url('https://static-assets.artlogic.net/w_1200,c_limit,f_auto,fl_lossy,q_auto/artlogicstorage/arario/images/view/aee047b01edf885f061a9683d72b2ac8/arariogallery-ryu-in-pillar-of-perception-1988.jpg');
-    background-size: cover;
-    background-position: center top;
+    background-size: 120%;
+    background-position: center 15%;
     background-repeat: no-repeat;
 }
 
