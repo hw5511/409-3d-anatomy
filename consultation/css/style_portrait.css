@@ -1857,9 +1857,16 @@ body {
     padding: var(--space-xl) 0;
 }
 
+.placement-box-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
 .placement-box {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: var(--card);
+    border: 1px solid var(--border);
     border-radius: var(--radius-lg);
     padding: var(--space-lg) var(--space-xl);
     text-align: center;
@@ -1880,20 +1887,25 @@ body {
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
     font-weight: 700;
     white-space: nowrap;
+    color: var(--fg);
+}
+
+.placement-box--accent .placement-label {
+    color: var(--accent-fg);
 }
 
 .placement-recommend {
     font-size: clamp(0.7rem, 0.85vw, 0.8rem);
     font-weight: 600;
-    opacity: 0.8;
+    color: var(--accent);
     letter-spacing: 0.1em;
-    margin-top: 0.25rem;
 }
 
 .placement-arrow {
     display: flex;
     align-items: center;
     padding: 0 var(--space-sm);
+    color: var(--muted-fg);
     opacity: 0.4;
     flex-shrink: 0;
 }
@@ -1905,7 +1917,7 @@ body {
 
 .placement-note p {
     font-size: clamp(0.9rem, 1.2vw, 1.1rem);
-    opacity: 0.6;
+    color: var(--muted-fg);
     line-height: 1.6;
 }
 
