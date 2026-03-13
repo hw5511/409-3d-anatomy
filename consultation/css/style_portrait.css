@@ -124,6 +124,16 @@ body {
     z-index: 2;
 }
 
+.hero-credit {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+    font-size: 0.7rem;
+    opacity: 0.25;
+    z-index: 2;
+    letter-spacing: 0.02em;
+}
+
 .hero-content {
     max-width: var(--content-max-width);
     width: 100%;
